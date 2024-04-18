@@ -74,7 +74,7 @@ $(document).ready(function () {
             `>
           <div class="card-img">
             <img src=` +
-            product.url +
+            product.url2 +
             ` alt="" />
           </div>
           <div class="card-desc">
@@ -137,7 +137,7 @@ $(document).ready(function () {
             `>
           <div class="card-img">
             <img src=` +
-            product.url +
+            product.url2 +
             ` alt="" />
           </div>
           <div class="card-desc">

@@ -6,6 +6,7 @@
     "unique": "feature",
     "category": "daily",
     "url": "../globalAsset/plushDoll.png",
+    "url2": "globalAsset/plushDoll.png",
     "price": "50.000"
   },
 
@@ -16,6 +17,7 @@
     "unique": "feature",
     "category": "health",
     "url": "../globalAsset/lipstik.png",
+    "url2": "globalAsset/lipstik.png",
     "price": "30.000"
   },
   {
@@ -25,6 +27,7 @@
     "unique": "feature",
     "category": "house",
     "url": "../globalAsset/noodleBowl.png",
+    "url2": "globalAsset/noodleBowl.png",
     "price": "55.000"
   },
   {
@@ -34,6 +37,7 @@
     "unique": "feature",
     "category": "daily",
     "url": "../globalAsset/umbrella.png",
+    "url2": "globalAsset/umbrella.png",
     "price": "90.000"
   },
   {
@@ -43,6 +47,7 @@
     "unique": "feature",
     "category": "house",
     "url": "../globalAsset/tableWare.png",
+    "url2": "globalAsset/tableWare.png",
     "price": "20.000"
   },
   {
@@ -52,6 +57,7 @@
     "unique": "feature",
     "category": "digital",
     "url": "../globalAsset/screenProtect.png",
+    "url2": "globalAsset/screenProtect.png",
     "price": "150.000",
     "top": "top",
     "descSingkat": "The Miniso Screen Protector offers premium protection for your electronic devices, ensuring their screens remain pristine and scratch-free. Crafted with high-quality materials, this screen protector provides a clear and transparent barrier against dust, scratches, and fingerprints, maintaining the clarity and sensitivity of your device's screen."
@@ -63,6 +69,7 @@
     "unique": "weekly",
     "category": "health",
     "url": "../globalAsset/parfume.png",
+    "url2": "globalAsset/parfume.png",
     "price": "67.000"
   },
   {
@@ -72,6 +79,7 @@
     "unique": "weekly",
     "category": "fashion",
     "url": "../globalAsset/slingBag.png",
+    "url2": "globalAsset/parfume.png",
     "price": "200.000"
   },
   {
@@ -81,6 +89,7 @@
     "unique": "weekly",
     "category": "food",
     "url": "../globalAsset/starwberries.png",
+    "url2": "globalAsset/parfume.png",
     "price": "45.000"
   }
 ]
