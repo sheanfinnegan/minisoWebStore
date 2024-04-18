@@ -71,7 +71,7 @@ $(document).ready(function () {
 
 // search
 $(document).ready(function () {
-  $(document).on("click", ".sc-but", function () {
+  function searchPro() {
     let inputSc = $("#search-ipt").val();
     let inputReal = inputSc.trim();
     if (inputReal === "") {
@@ -148,6 +148,16 @@ $(document).ready(function () {
         console.error("Error:", textStatus, errorThrown);
       },
     });
+  }
+
+  $(document).on("click", ".sc-but", function () {
+    searchPro();
+  });
+
+  $("#search-ipt").keypress(function (e) {
+    if (e.keyCode === 13) {
+      searchPro();
+    }
   });
 });
 
