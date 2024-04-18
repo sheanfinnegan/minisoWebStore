@@ -156,7 +156,7 @@ $(document).ready(function () {
   $(document).on("click", ".selectable", function () {
     var selectedId = $(this).data("id");
     localStorage.setItem("storedDataId", selectedId);
-    localStorage.setItem("prevPage", "/Product/product.html");
+    localStorage.setItem("prevPage", "../Product/product.html");
     window.location.href = "../DetailProduct/detail.html";
   });
 });
