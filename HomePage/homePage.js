@@ -59,7 +59,7 @@ setInterval(changeImage2, 2000);
 
 $(document).ready(function () {
   $.ajax({
-    url: "../data.json",
+    url: "data.json",
     type: "GET",
     dataType: "json",
     success: function (data) {
@@ -115,13 +115,13 @@ $(document).ready(function () {
     var selectedId = $(this).data("id");
     localStorage.setItem("storedDataId", selectedId);
     localStorage.setItem("prevPage", "/HomePage/index.html");
-    window.location.href = "../DetailProduct/detail.html";
+    window.location.href = "DetailProduct/detail.html";
   });
 });
 
 $(document).ready(function () {
   $.ajax({
-    url: "../data.json",
+    url: "data.json",
     type: "GET",
     dataType: "json",
     success: function (data) {
