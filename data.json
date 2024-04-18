@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "nama": "Plush Doll",
+    "deskripsi": "The Miniso Plush Doll, with its charming design and soft, huggable texture, is a delightful addition to any collection. Crafted with high-quality materials and meticulous craftsmanship, this plush doll offers both style and comfort. Its adorable appearance, featuring intricate details and vibrant colors, makes it a favorite among both children and adults alike. Measuring approximately 20 cm in height, this plush doll is perfect for cuddling or displaying on a shelf. Whether as a playful companion for imaginative adventures or a cute decorative piece for your living space, the Miniso Plush Doll brings joy and warmth to any environment. Its lightweight construction and durable stitching ensure long-lasting enjoyment, making it a wonderful gift for loved ones of all ages",
+    "unique": "feature",
+    "category": "daily",
+    "url": "../globalAsset/plushDoll.png",
+    "price": "50.000"
+  },
+
+  {
+    "id": 2,
+    "nama": "Liquid Lipstick",
+    "deskripsi": "The Miniso Liquid Lipstick is a must-have addition to any makeup collection, offering a blend of style, quality, and affordability. With its smooth and creamy texture, this lipstick glides effortlessly onto the lips, providing a bold and vibrant color payoff that lasts throughout the day. Formulated with high-quality ingredients, it delivers a comfortable and hydrating wear, leaving the lips feeling soft and moisturized. Available in a wide range of stunning shades, the Miniso Liquid Lipstick allows you to express your unique style and personality with ease. Whether you're looking for a classic nude, a bold red, or a playful pink, there's a shade to suit every occasion and mood. Complete your makeup look with the Miniso Liquid Lipstick for a flawless and long-lasting finish that's sure to turn heads.",
+    "unique": "feature",
+    "category": "health",
+    "url": "../globalAsset/lipstik.png",
+    "price": "30.000"
+  },
+  {
+    "id": 3,
+    "nama": "Noodle Bowl",
+    "deskripsi": "The Miniso Noodle Bowl is a versatile and practical addition to any kitchenware collection. Crafted with durable materials, this bowl is designed to withstand daily use while maintaining its elegant appearance. Its spacious capacity and wide rim make it ideal for serving a variety of dishes, from steaming hot noodles to hearty soups and refreshing salads. The sleek and minimalist design adds a touch of modern sophistication to your dining table, while the smooth surface ensures easy cleaning and maintenance. Whether you're enjoying a quick meal on the go or hosting a dinner party with friends, the Miniso Noodle Bowl offers convenience and style in every bite. Elevate your dining experience with this essential kitchen essential.",
+    "unique": "feature",
+    "category": "house",
+    "url": "../globalAsset/noodleBowl.png",
+    "price": "55.000"
+  },
+  {
+    "id": 4,
+    "nama": "Miniso Umbrella",
+    "deskripsi": "The Miniso Umbrella is a stylish and functional accessory designed to keep you dry and protected from the elements. Crafted with high-quality materials and precision engineering, this umbrella offers durability and reliability even in adverse weather conditions. Its compact and lightweight design makes it easy to carry with you wherever you go, while its sturdy construction ensures long-lasting performance. With its sleek and modern aesthetic, the Miniso Umbrella adds a touch of elegance to any rainy day ensemble. Whether you're navigating crowded streets or strolling through the park, this umbrella provides ample coverage and peace of mind. Stay dry in style with the Miniso Umbrella, your trusted companion for rainy days.",
+    "unique": "feature",
+    "category": "daily",
+    "url": "../globalAsset/umbrella.png",
+    "price": "90.000"
+  },
+  {
+    "id": 5,
+    "nama": "TableWare",
+    "deskripsi": "Miniso Tableware offers a fusion of functionality and style, elevating your dining experience with its sleek design and durable construction. Crafted from high-quality materials, each piece is meticulously designed to withstand everyday use while adding a touch of elegance to your table setting. Whether you're hosting a formal dinner party or enjoying a casual meal with family and friends, Miniso Tableware enhances the ambiance with its modern aesthetic and practical features. From dinner plates to bowls and cutlery sets, the collection offers a wide range of options to suit your culinary needs. With its versatile designs and timeless appeal, Miniso Tableware is the perfect choice for both everyday dining and special occasions, bringing sophistication and charm to every meal.",
+    "unique": "feature",
+    "category": "house",
+    "url": "../globalAsset/tableWare.png",
+    "price": "20.000"
+  },
+  {
+    "id": 6,
+    "nama": "Screen Protector",
+    "deskripsi": "The Miniso Screen Protector offers premium protection for your electronic devices, ensuring their screens remain pristine and scratch-free. Crafted with high-quality materials, this screen protector provides a clear and transparent barrier against dust, scratches, and fingerprints, maintaining the clarity and sensitivity of your device's screen. Its precise cut ensures a perfect fit for various device models, while its easy application process eliminates bubbles and residue for a seamless finish. With its ultra-thin design, the Miniso Screen Protector maintains the sleek profile of your device without compromising on protection. Whether for smartphones, tablets, or laptops, this screen protector is a reliable safeguard for your valuable electronics, keeping them looking new and ensuring uninterrupted usability.",
+    "unique": "feature",
+    "category": "digital",
+    "url": "../globalAsset/screenProtect.png",
+    "price": "150.000",
+    "top": "top",
+    "descSingkat": "The Miniso Screen Protector offers premium protection for your electronic devices, ensuring their screens remain pristine and scratch-free. Crafted with high-quality materials, this screen protector provides a clear and transparent barrier against dust, scratches, and fingerprints, maintaining the clarity and sensitivity of your device's screen."
+  },
+  {
+    "id": 7,
+    "nama": "Girl Parfume",
+    "deskripsi": "The Miniso Girl Perfume exudes a captivating and feminine fragrance that captures the essence of sophistication and elegance. With its enchanting blend of floral and fruity notes, this perfume creates a delightful aura that leaves a lasting impression. The carefully curated ingredients ensure a harmonious symphony of scents, evoking feelings of confidence and allure with every spritz. Packaged in a chic and stylish bottle, the Miniso Girl Perfume is not only a scent but also a fashion statement. Its compact size makes it perfect for on-the-go use, allowing you to carry your favorite fragrance wherever you go. Whether for everyday wear or special occasions, this perfume is sure to elevate your mood and enhance your presence, leaving you feeling empowered and irresistible.",
+    "unique": "weekly",
+    "category": "health",
+    "url": "../globalAsset/parfume.png",
+    "price": "67.000"
+  },
+  {
+    "id": 8,
+    "nama": "Sling bag",
+    "deskripsi": "The Miniso Sling Bag is a versatile accessory that combines functionality with style. Crafted from durable materials, this sling bag offers reliability for everyday use. Its compact design features multiple compartments, providing ample space to organize your essentials such as phone, wallet, keys, and more. The adjustable strap allows for comfortable wear, whether across the body or over the shoulder. With its sleek and modern appearance, the Miniso Sling Bag complements a variety of outfits and occasions, from casual outings to travel adventures. Whether you're exploring the city streets or attending a social gathering, this sling bag is a practical and fashionable choice. Add a touch of convenience and flair to your ensemble with the Miniso Sling Bag.",
+    "unique": "weekly",
+    "category": "fashion",
+    "url": "../globalAsset/slingBag.png",
+    "price": "200.000"
+  },
+  {
+    "id": 9,
+    "nama": "Miniso Strawberries",
+    "deskripsi": "The Miniso Strawberries offer a delectable treat for the senses, combining sweetness and freshness in every bite. These luscious strawberries are carefully selected for their ripe, juicy flavor and vibrant red color. Packed with vitamins and antioxidants, they not only tantalize the taste buds but also provide a nutritious boost to your diet. Whether enjoyed as a snack on their own, added to salads, or used in desserts, Miniso Strawberries add a burst of flavor to any dish. Their versatility makes them perfect for all occasions, from casual gatherings to elegant affairs. With their irresistible taste and wholesome goodness, Miniso Strawberries are sure to become a favorite among fruit lovers of all ages.",
+    "unique": "weekly",
+    "category": "food",
+    "url": "../globalAsset/starwberries.png",
+    "price": "45.000"
+  }
+]
