@@ -22,7 +22,11 @@ dropMenu.addEventListener("mouseleave", () => {
   dropMenu.style.display = "none";
 });
 
-const images = ["Assets/ban-1.png", "Assets/ban-2.png", "Assets/ban-3.png"];
+const images = [
+  "HomePage/Assets/ban-1.png",
+  "HomePage/Assets/ban-2.png",
+  "HomePage/Assets/ban-3.png",
+];
 
 let currIndex = 0;
 function changeImage() {
@@ -35,9 +39,9 @@ function changeImage() {
 }
 
 const images2 = [
-  "Assets/slide-1.png",
-  "Assets/slide-2.png",
-  "Assets/slide-3.png",
+  "HomePage/Assets/slide-1.png",
+  "HomePage/Assets/slide-2.png",
+  "HomePage/Assets/slide-3.png",
 ];
 
 let currIndex2 = 0;

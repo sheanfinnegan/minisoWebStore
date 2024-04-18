@@ -40,7 +40,7 @@ $(document).ready(function () {
           <a href="../Register/register.html">Register</a>
         </div>
         <div class="form">
-          <form action="../HomePage/index.html" class="form-log">
+          <form action="../index.html" class="form-log">
             <div class="input uName">
               <p>Username :</p>
               <input
@@ -152,6 +152,6 @@ $(document).ready(function () {
 
   $(".log-out").click(function () {
     localStorage.clear();
-    window.location.href = "../HomePage/index.html";
+    window.location.href = "../index.html";
   });
 });

@@ -17,7 +17,7 @@ $(document).ready(function () {
       <div class="card-log">
         <h1>Sorry You Need to Login</h1>
         <a class="goLog" href="../Login/login.html">Go to Login Page</a>
-        <a href="../HomePage/index.html" class="continue">
+        <a href="../index.html" class="continue">
           <i class="bx bxs-chevrons-left"></i>
           Return to Home Page
         </a>
