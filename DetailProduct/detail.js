@@ -11,6 +11,17 @@ $(document).ready(function () {
     return;
   }
 });
+
+const other = document.querySelector(".other-link");
+const dropMenu = document.querySelector(".drop-menu");
+other.addEventListener("mouseenter", () => {
+  dropMenu.style.display = "flex";
+});
+
+dropMenu.addEventListener("mouseleave", () => {
+  dropMenu.style.display = "none";
+});
+
 $(document).ready(function () {
   // Mengambil data keranjang belanja dari localStorage
   if (typeof Storage !== "undefined") {
