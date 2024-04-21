@@ -79,7 +79,7 @@
     "unique": "weekly",
     "category": "fashion",
     "url": "../globalAsset/slingBag.png",
-    "url2": "globalAsset/parfume.png",
+    "url2": "globalAsset/slingBag.png",
     "price": "200.000"
   },
   {
@@ -89,7 +89,7 @@
     "unique": "weekly",
     "category": "food",
     "url": "../globalAsset/starwberries.png",
-    "url2": "globalAsset/parfume.png",
+    "url2": "globalAsset/starwberries.png",
     "price": "45.000"
   }
 ]
