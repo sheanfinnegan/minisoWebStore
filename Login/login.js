@@ -85,6 +85,21 @@ $(document).ready(function () {
       </div>
     `);
   }
+
+  const visIcon = document.querySelector(".visible");
+  const input = document.querySelector(".passw");
+  let isVis = false;
+
+  $(".visible").click(function () {
+    isVis = !isVis;
+    if (isVis) {
+      input.type = "text";
+      visIcon.style.color = "black";
+    } else {
+      input.type = "password";
+      visIcon.style.color = "gray";
+    }
+  });
 });
 
 const other = document.querySelector(".other-link");
@@ -97,21 +112,7 @@ dropMenu.addEventListener("mouseleave", () => {
   dropMenu.style.display = "none";
 });
 
-const visIcon = document.querySelector(".visible");
-const input = document.querySelector(".passw");
-
-let isVis = false;
-
-$(".visible").click(function () {
-  isVis = !isVis;
-  if (isVis) {
-    input.type = "text";
-    visIcon.style.color = "black";
-  } else {
-    input.type = "password";
-    visIcon.style.color = "gray";
-  }
-});
+console.log(visIcon, input);
 
 $(document).ready(function () {
   if (typeof Storage !== "undefined") {
