@@ -112,8 +112,6 @@ dropMenu.addEventListener("mouseleave", () => {
   dropMenu.style.display = "none";
 });
 
-console.log(visIcon, input);
-
 $(document).ready(function () {
   if (typeof Storage !== "undefined") {
     var currentQuantity = localStorage.getItem("cartQuantity");

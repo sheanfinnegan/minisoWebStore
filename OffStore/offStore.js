@@ -17,22 +17,14 @@ other.addEventListener("mouseenter", () => {
   dropMenu.style.display = "flex";
 });
 
-dropMenu.addEventListener("mouseleave", () => {
-  dropMenu.style.display = "none";
-});
+$(document).ready(function () {
+  if (typeof Storage !== "undefined") {
+    var currentQuantity = localStorage.getItem("cartQuantity");
 
-const visIcon = document.querySelector(".visible");
-const input = document.querySelector(".passw");
-
-let isVis = false;
-
-visIcon.addEventListener("click", () => {
-  isVis = !isVis;
-  if (isVis) {
-    input.type = "text";
-    visIcon.style.color = "black";
+    if (currentQuantity !== null) {
+      $("#cart-icon").attr("data-quantity", currentQuantity);
+    }
   } else {
-    input.type = "password";
-    visIcon.style.color = "gray";
+    console.log("Browser tidak mendukung penyimpanan lokal (localStorage).");
   }
 });
