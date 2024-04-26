@@ -490,8 +490,12 @@ footer {
 }
 
 .qty-h {
-  margin-left: 47px;
+  margin-left: 50px;
   /* margin-right: 50px; */
+}
+
+.price-h {
+  margin-left: 16px;
 }
 
 .tot-h {
