@@ -113,17 +113,21 @@ dropMenu.addEventListener("mouseleave", () => {
 });
 
 $(document).ready(function () {
-  if (typeof Storage !== "undefined") {
-    var currentQuantity = localStorage.getItem("cartQuantity");
+  let isLogin = localStorage.getItem("loggedIn");
+  if (isLogin !== null) {
+    if (typeof Storage !== "undefined") {
+      var currentQuantity = localStorage.getItem("cartQuantity");
 
-    if (currentQuantity !== null) {
-      $("#cart-icon").attr("data-quantity", currentQuantity);
+      if (currentQuantity !== null) {
+        $("#cart-icon").attr("data-quantity", currentQuantity);
+      }
+    } else {
+      console.log("Browser tidak mendukung penyimpanan lokal (localStorage).");
     }
-  } else {
-    console.log("Browser tidak mendukung penyimpanan lokal (localStorage).");
   }
 
-  $(".log-but").click(function () {
+  $(".log-but").click(function (e) {
+    // e.preventDefault();
     var allFieldsFilled = true;
     $(".form-log input[required]").each(function () {
       if ($(this).val().trim() === "") {
@@ -132,12 +136,35 @@ $(document).ready(function () {
       }
     });
 
+    var uNameRegist = localStorage.getItem("username");
+    var mailRegist = localStorage.getItem("email");
+    var passRegist = localStorage.getItem("password");
+
+    var username = $(".form-log .uName input").val();
+    var email = $(".form-log .mail input").val();
+    var password = $(".form-log .pass input").val();
+
+    console.log(uNameRegist, username);
+    console.log(uNameRegist === username);
+    console.log(mailRegist, email);
+    console.log(mailRegist === email);
+    console.log(passRegist, password);
+    console.log(passRegist === password);
+    if (
+      username !== uNameRegist ||
+      email !== mailRegist ||
+      password !== passRegist
+    ) {
+      alert("User not registered or incorrect data.");
+      e.preventDefault();
+      return;
+    } else {
+      allFieldsFilled = true;
+    }
+
     // If all required fields are filled out, set "loggedIn" flag
     if (allFieldsFilled) {
       localStorage.setItem("loggedIn", "true");
-      var username = $(".form-log .uName input").val();
-      var email = $(".form-log .mail input").val();
-      var password = $(".form-log .pass input").val();
 
       // Store the user data in local storage
       var userData = {
@@ -150,7 +177,8 @@ $(document).ready(function () {
   });
 
   $(".log-out").click(function () {
-    localStorage.clear();
+    // localStorage.clear();
+    localStorage.removeItem("loggedIn");
     window.location.href = "../index.html";
   });
 });

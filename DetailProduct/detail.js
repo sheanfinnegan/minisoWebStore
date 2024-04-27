@@ -24,14 +24,17 @@ dropMenu.addEventListener("mouseleave", () => {
 
 $(document).ready(function () {
   // Mengambil data keranjang belanja dari localStorage
-  if (typeof Storage !== "undefined") {
-    var currentQuantity = localStorage.getItem("cartQuantity");
+  let isLogin = localStorage.getItem("loggedIn");
+  if (isLogin !== null) {
+    if (typeof Storage !== "undefined") {
+      var currentQuantity = localStorage.getItem("cartQuantity");
 
-    if (currentQuantity !== null) {
-      $("#cart-icon").attr("data-quantity", currentQuantity);
+      if (currentQuantity !== null) {
+        $("#cart-icon").attr("data-quantity", currentQuantity);
+      }
+    } else {
+      console.log("Browser tidak mendukung penyimpanan lokal (localStorage).");
     }
-  } else {
-    console.log("Browser tidak mendukung penyimpanan lokal (localStorage).");
   }
 
   var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];

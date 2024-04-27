@@ -60,13 +60,16 @@ button2.addEventListener("click", () => {
 });
 
 $(document).ready(function () {
-  if (typeof Storage !== "undefined") {
-    var currentQuantity = localStorage.getItem("cartQuantity");
+  let isLogin = localStorage.getItem("loggedIn");
+  if (isLogin !== null) {
+    if (typeof Storage !== "undefined") {
+      var currentQuantity = localStorage.getItem("cartQuantity");
 
-    if (currentQuantity !== null) {
-      $("#cart-icon").attr("data-quantity", currentQuantity);
+      if (currentQuantity !== null) {
+        $("#cart-icon").attr("data-quantity", currentQuantity);
+      }
+    } else {
+      console.log("Browser tidak mendukung penyimpanan lokal (localStorage).");
     }
-  } else {
-    console.log("Browser tidak mendukung penyimpanan lokal (localStorage).");
   }
 });

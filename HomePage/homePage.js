@@ -69,7 +69,7 @@ $(document).ready(function () {
       $.each(featuredProducts, function (index, product) {
         $(".featured-sec").append(
           `
-        <div class="fP card" data-id=` +
+        <div class="selectable fP card" data-id=` +
             product.id +
             `>
           <div class="card-img">
@@ -81,7 +81,7 @@ $(document).ready(function () {
             <div class="kiri">
               <p class="selectable" data-id=` +
             product.id +
-            `>` +
+            ` >` +
             product.nama +
             `</p>
               <p> Rp. ` +
@@ -111,11 +111,13 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(document).on("click", ".selectable", function () {
-    var selectedId = $(this).data("id");
-    localStorage.setItem("storedDataId", selectedId);
-    localStorage.setItem("prevPage", "../index.html");
-    window.location.href = "DetailProduct/detail.html";
+  $(document).on("click", ".selectable", function (event) {
+    if (!event.target.classList.contains("add")) {
+      var selectedId = $(this).data("id");
+      localStorage.setItem("storedDataId", selectedId);
+      localStorage.setItem("prevPage", "../index.html");
+      window.location.href = "DetailProduct/detail.html";
+    }
   });
 });
 
@@ -132,7 +134,7 @@ $(document).ready(function () {
       $.each(featuredProducts, function (index, product) {
         $(".week-sec").append(
           `
-        <div class="fP card" data-id=` +
+        <div class="selectable fP card" data-id=` +
             product.id +
             `>
           <div class="card-img">
@@ -174,14 +176,17 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  if (typeof Storage !== "undefined") {
-    var currentQuantity = localStorage.getItem("cartQuantity");
+  let isLogin = localStorage.getItem("loggedIn");
+  if (isLogin !== null) {
+    if (typeof Storage !== "undefined") {
+      var currentQuantity = localStorage.getItem("cartQuantity");
 
-    if (currentQuantity !== null) {
-      $("#cart-icon").attr("data-quantity", currentQuantity);
+      if (currentQuantity !== null) {
+        $("#cart-icon").attr("data-quantity", currentQuantity);
+      }
+    } else {
+      console.log("Browser tidak mendukung penyimpanan lokal (localStorage).");
     }
-  } else {
-    console.log("Browser tidak mendukung penyimpanan lokal (localStorage).");
   }
 
   var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
@@ -193,6 +198,8 @@ $(document).ready(function () {
       $(".not-log").css("display", "flex");
       return;
     }
+
+    $("#cart-icon").addClass("pulse-anim");
     var currentQuantity = parseInt($("#cart-icon").attr("data-quantity"));
 
     var newQuantity = currentQuantity + 1;
@@ -222,6 +229,10 @@ $(document).ready(function () {
 
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     localStorage.setItem("totalPrice", totalPrice);
+
+    setTimeout(function () {
+      $("#cart-icon").removeClass("pulse-anim");
+    }, 300);
   });
 });
 
