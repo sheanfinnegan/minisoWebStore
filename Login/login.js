@@ -144,12 +144,6 @@ $(document).ready(function () {
     var email = $(".form-log .mail input").val();
     var password = $(".form-log .pass input").val();
 
-    console.log(uNameRegist, username);
-    console.log(uNameRegist === username);
-    console.log(mailRegist, email);
-    console.log(mailRegist === email);
-    console.log(passRegist, password);
-    console.log(passRegist === password);
     if (
       username !== uNameRegist ||
       email !== mailRegist ||

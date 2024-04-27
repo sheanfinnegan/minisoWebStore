@@ -36,7 +36,27 @@ $(document).ready(function () {
     }
   }
 
-  $(".reg-but").click(function () {
+  $(".reg-but").click(function (e) {
+    var uNameRegist = localStorage.getItem("username");
+    var mailRegist = localStorage.getItem("email");
+    var passRegist = localStorage.getItem("password");
+
+    console.log(uNameRegist, mailRegist, passRegist);
+
+    if (uNameRegist !== null && mailRegist !== null && passRegist !== null) {
+      if (
+        $(".input-uName").val() === uNameRegist &&
+        $(".input-mail").val() === mailRegist &&
+        $(".input-pass").val() === passRegist
+      ) {
+        alert("User already registered please Login");
+        e.preventDefault();
+        window.location.href = "../Login/login.html";
+        return;
+      }
+    }
+
+    localStorage.clear();
     localStorage.setItem("username", $(".input-uName").val());
     localStorage.setItem("email", $(".input-mail").val());
     localStorage.setItem("password", $(".input-pass").val());
