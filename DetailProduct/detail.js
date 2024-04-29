@@ -47,6 +47,9 @@ $(document).ready(function () {
       $(".not-log").css("display", "flex");
       return;
     }
+
+    $(".added").css("display", "flex");
+    $("#cart-icon").addClass("pulse-anim");
     var currentQuantity = parseInt($("#cart-icon").attr("data-quantity"));
 
     var newQuantity = currentQuantity + 1;
@@ -75,6 +78,15 @@ $(document).ready(function () {
     totalPrice += productPrice;
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     localStorage.setItem("totalPrice", totalPrice);
+
+    setTimeout(function () {
+      // console.log("Hello");
+      $(".added").css("display", "none");
+    }, 560);
+
+    setTimeout(function () {
+      $("#cart-icon").removeClass("pulse-anim");
+    }, 300);
   });
 
   $(".back-text").click(function () {

@@ -108,7 +108,7 @@ $(document).ready(function () {
           $.each(featuredProducts, function (index, product) {
             $(".featured-sec").append(
               `
-            <div class="fP card" data-id=` +
+            <div class="selectable fP card" data-id=` +
                 product.id +
                 `>
               <div class="card-img">
@@ -164,10 +164,12 @@ $(document).ready(function () {
 // card
 $(document).ready(function () {
   $(document).on("click", ".selectable", function () {
-    var selectedId = $(this).data("id");
-    localStorage.setItem("storedDataId", selectedId);
-    localStorage.setItem("prevPage", "../Product/product.html");
-    window.location.href = "../DetailProduct/detail.html";
+    if (!event.target.classList.contains("add")) {
+      var selectedId = $(this).data("id");
+      localStorage.setItem("storedDataId", selectedId);
+      localStorage.setItem("prevPage", "../Product/product.html");
+      window.location.href = "../DetailProduct/detail.html";
+    }
   });
 });
 
@@ -182,7 +184,7 @@ $(document).ready(function () {
       $.each(featuredProducts, function (index, product) {
         $(".featured-sec").append(
           `
-        <div class="fP card" data-id=` +
+        <div class="selectable fP card" data-id=` +
             product.id +
             `>
           <div class="card-img">
@@ -253,7 +255,7 @@ $(document).ready(function () {
           $.each(featuredProducts, function (index, product) {
             $(".featured-sec").append(
               `
-        <div class="fP card" data-id=` +
+        <div class="selectable fP card" data-id=` +
                 product.id +
                 `>
           <div class="card-img">
@@ -291,7 +293,7 @@ $(document).ready(function () {
           $.each(featuredProducts, function (index, product) {
             $(".featured-sec").append(
               `
-        <div class="fP card" data-id=` +
+        <div class="selectable fP card" data-id=` +
                 product.id +
                 `>
           <div class="card-img">
@@ -359,6 +361,7 @@ $(document).ready(function () {
       return;
     }
 
+    $(".added").css("display", "flex");
     $("#cart-icon").addClass("pulse-anim");
     var currentQuantity = parseInt($("#cart-icon").attr("data-quantity"));
 
@@ -393,6 +396,10 @@ $(document).ready(function () {
     setTimeout(function () {
       $("#cart-icon").removeClass("pulse-anim");
     }, 300);
+
+    setTimeout(function () {
+      $(".added").css("display", "none");
+    }, 560);
   });
 });
 

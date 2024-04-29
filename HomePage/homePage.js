@@ -199,6 +199,8 @@ $(document).ready(function () {
       return;
     }
 
+    $(".added").css("display", "flex"); // Mengubah display menjadi flex saat tombol diklik
+
     $("#cart-icon").addClass("pulse-anim");
     var currentQuantity = parseInt($("#cart-icon").attr("data-quantity"));
 
@@ -233,6 +235,10 @@ $(document).ready(function () {
     setTimeout(function () {
       $("#cart-icon").removeClass("pulse-anim");
     }, 300);
+
+    setTimeout(function () {
+      $(".added").css("display", "none");
+    }, 560);
   });
 });
 
