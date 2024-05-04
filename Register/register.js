@@ -65,5 +65,28 @@ $(document).ready(function () {
     localStorage.setItem("username", $(".input-uName").val());
     localStorage.setItem("email", $(".input-mail").val());
     localStorage.setItem("password", $(".input-pass").val());
+    $(".success-log").css("display", "flex");
+    setTimeout(function () {
+      $(".success-log").css("display", "none");
+    }, 1300);
+    e.preventDefault();
+    setTimeout(function () {
+      window.location.href = "../Login/login.html";
+    }, 1000);
+  });
+
+  const visIcon = document.querySelector(".visible");
+  const input = document.querySelector(".input-pass");
+  let isVis = false;
+
+  $(".visible").click(function () {
+    isVis = !isVis;
+    if (isVis) {
+      input.type = "text";
+      visIcon.style.color = "black";
+    } else {
+      input.type = "password";
+      visIcon.style.color = "gray";
+    }
   });
 });
