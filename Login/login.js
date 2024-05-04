@@ -149,7 +149,10 @@ $(document).ready(function () {
       email !== mailRegist ||
       password !== passRegist
     ) {
-      alert("User not registered or incorrect data.");
+      $(".added").css("display", "flex");
+      setTimeout(function () {
+        $(".added").css("display", "none");
+      }, 1300);
       e.preventDefault();
       return;
     } else {
@@ -159,6 +162,14 @@ $(document).ready(function () {
     // If all required fields are filled out, set "loggedIn" flag
     if (allFieldsFilled) {
       localStorage.setItem("loggedIn", "true");
+      $(".success-log").css("display", "flex");
+      setTimeout(function () {
+        $(".success-log").css("display", "none");
+      }, 1300);
+      e.preventDefault();
+      setTimeout(function () {
+        window.location.href = "../index.html";
+      }, 1000);
 
       // Store the user data in local storage
       var userData = {

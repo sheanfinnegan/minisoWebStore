@@ -49,9 +49,14 @@ $(document).ready(function () {
         $(".input-mail").val() === mailRegist &&
         $(".input-pass").val() === passRegist
       ) {
-        alert("User already registered please Login");
+        $(".added").css("display", "flex");
+        setTimeout(function () {
+          $(".added").css("display", "none");
+        }, 1000);
         e.preventDefault();
-        window.location.href = "../Login/login.html";
+        setTimeout(function () {
+          window.location.href = "../Login/login.html";
+        }, 1000);
         return;
       }
     }
