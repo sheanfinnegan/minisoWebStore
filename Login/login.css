@@ -18,7 +18,8 @@
 }
 
 .added,
-.success-log {
+.success-log,
+.success-logout {
   display: none;
   position: fixed;
   top: 0;

@@ -184,6 +184,12 @@ $(document).ready(function () {
   $(".log-out").click(function () {
     // localStorage.clear();
     localStorage.removeItem("loggedIn");
-    window.location.href = "../index.html";
+    $(".success-logout").css("display", "flex");
+    setTimeout(function () {
+      $(".success-logout").css("display", "none");
+    }, 1300);
+    setTimeout(function () {
+      window.location.href = "../index.html";
+    }, 1000);
   });
 });
